@@ -8,13 +8,23 @@
                     <img src="img/login_logo.png" width="300" height="200">
                 </div>
                 <div class="list list-inset">
-                    <label class="item item-input"  style="background-color:#55A2F2"><input type="text" ng-model="user.username" placeholder="用户名"> </label>
-                    <label class="item item-input" style="background-color:#55A2F2"><input type="password" ng-model="user.password" placeholder="密码"> </label>
+                    <label class="item item-input"  style="background-color:white">
+                        <i class="icon ion-ios-person-outline"></i>
+                        <input style="margin-left:10px" type="text" ng-model="user.username" placeholder="用户名"> 
+                    </label>
+                    <label class="item item-input" style="background-color:white">
+                        <i class="icon ion-ios-locked-outline"></i>
+                        <input style="margin-left:10px" type="password" ng-model="user.password" placeholder="密码">
+                     </label>
                 </div>
                 <div>
-                    <button class="button button-block button-balanced" ng-click="login(user);">登   录 </button>
+                    <button class="button button-block button-stable" ng-click="login(user);"><span style="font-size:24px;color:#2F88E4">登   录</span></button>
                 </div>
-            </div>
-        </div>
-    </ion-content>
+                <div>
+                    <ion-checkbox class="checkbox-balanced" ng-model="filter.blue" ng-checked="true" style="background: #2F88E4;border:0;width:150px;margin:auto"><span style="font-size:12px;color:white">记住我?</span></ion-checkbox>
+                </div>
+                </div>
+       </div>
+
+</ion-content>
 </ion-view>
